@@ -1,0 +1,83 @@
+ Git Repository Fork (Github 기능)
+- 하나의 큰 상자(컨테이너, Repository)를 다른 계정(또는 네임스페이스)으로 복사
+- Git에 잇는 명령어가 아님
+- 다른 사람의 Github 계정 Repository에서 fork를 눌러 내계정 Repository로 복사
+
+✔ 다른 사람과 협업하기
+- 원하는 Repository에서 Settings -> collaborators -> Add people
+
+✔ Repository 삭제하기
+- 원하는 Repository에서 Settings -> General 아래로 스크롤 -> Danger Zone -> Delete this Repository
+
+Git Repository Clone 
+- Repository를 로컬 시스템에 복제하는 방법
+- 지금까지 모든 Repository의 히스토리가 포함
+
+    git clone git주소   (폴더를 생성)
+    git clone git주소 . (폴더를 생성하지 않음)
+        
+    Clone
+    A Repository -> clone -> 내 컴퓨터에 저장
+
+    Fork
+    A Repository -> Fork -> Repository -> Clone
+
+    git clone https://github.com/TIcording/test.git
+    git clone https://github.com/TIcording/test.git . -> 폴더 생성X
+
+
+github DESKTOP 이동
+https://desktop.github.com/
+
+Branch
+- 작업에 대한 나무 가지
+- 큰 줄기에 영향을 주지 않고 가지에서만 작업을 할 수 있음
+- Git 에서 저장소의 기록에서 특정 커밋에 대한 포인터
+- 각 브랜치는 자체 커밋 및 변경 세트를 가질 수 있음
+- 브랜치를 사용해서 저장소의 메인 분기에 영향을 미치지 않고 여러 기능이나 버그 수정을 동시에 수행할 수 있음
+
+
+✔ Pull Request
+- 당기기를 요청(다른 작업자가 Push를 했으니 해당 자료를 가져가도록)
+- PR은 저장소에 대한 변경 사항을 제안하고 다른 개발자와 협업하는 방법
+- PR은 일반적으로 소프트웨어 개발에서 코드 변경을 제안하고 검토하며 저장소의 브랜치를 병합하는데 사용
+
+PR 사용 과정
+
+    PR 만들기
+    * 새로운 브랜치를 만들고 코드를 수정
+    * 원격 저장소에 해당 브랜치를 push
+
+    PR 리뷰
+    * 함께 작업하는 작업자가 해당 PR을 리뷰함
+    * 문제가 될만한 부분이 없는지 체크
+
+    PR Merge
+    * 브랜치는 새로운 분기가 생기는 것이므로 PR Merge를 통해 다시 병함
+    * 병합 후 더이상 필요없는 브랜치는 삭제될 수 있음
+
+    PR Close
+    * 문제가 있거나, 중복된 경우, 더이상 필요 없는 PR을 닫을 수 있음
+    * PR을 열어둔 상태에서 기존 Branch에 Commit하면 PR에도 모두 반영됨
+
+
+브랜치 변경
+    git checkout -b 브랜치명
+
+
+fetch
+원격저장소에서 소스를 가져오기. merge를 사용하지 않음
+    git fetch origin
+
+Pull
+원격저장소에서 fetch 명령어로 가져온후 merge까지 한번에 실행하는 명령어
+    git pull origin
+
+✔ .gitignore
+프로젝트에 원하지 않은 백업 파일이나 로그파일 또는 보안상 깃허브에 올리고 싶지 않은 파일들을 제외시킬 수 있는 설정파일
+
+https://gitignore.io
+https://www.toptal.com/developers/gitignore
+
+파일을 가져와서 .gitignore 파일을 만들어(git init이 되어있는 폴더안에)주면 적용된다. -> ignore될 파일을 자동으로 적용해준다.
+

@@ -1,0 +1,65 @@
+create database itclass;
+
+use itclass;
+
+
+create table AI(
+	name varchar(10) primary key,
+    age  varchar(10),
+    gender varchar(10)
+    
+);
+
+select * from ai;
+
+
+create table java(
+	name varchar(10) primary key,
+    age  varchar(10),
+    gender varchar(10)
+    
+);
+
+
+create table aws(
+	name varchar(10) primary key,
+    age  varchar(10),
+    gender varchar(10)
+    
+);
+
+drop database itclass;
+
+select * from ai;
+
+#create database itclass;
+
+
+
+insert into ai values('강진영','26','남자');
+insert into ai values('고예성','27','여자');
+insert into ai values('고예진','24','여자');
+insert into ai values('김다연','28','여자');
+insert into ai values('김준호','24','남자');
+
+insert into java values('나창대','30','남자');
+insert into java values('박성민','24','남자');
+insert into java values('백지명','26','남자');
+insert into java values('서승수','27','남자');
+insert into java values('송태인','26','남자');
+
+select * from java;
+
+insert into aws values ('안영준','26','남자');
+insert into aws values ('이현준','27','남자');
+insert into aws values ('조세연','25','여자');
+insert into aws values ('조윤재','30','남자');
+insert into aws values ('최영현','26','남자');
+insert into aws values ('탁성대','27','남자');
+insert into aws values ('한형진','26','남자');
+
+select * from aws;
+
+
+
+
