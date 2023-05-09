@@ -1,0 +1,18 @@
+DataBase
+RDBMS  
+- SQL을 사용, table을 사용
+- Oracle, MYSQL, MS-SQL, PostgreSQL, SQLite
+
+
+NOSQL
+- key-Value
+- Document
+- Wide-column
+- Graph
+
+ORM/ODM
+- ORM(Object Relational Mapping) ->TYPEORM, Sequelize, Prisma
+- ODM(Object Document Mapper) -> mongoose
+
+
+
