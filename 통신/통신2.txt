@@ -1,0 +1,2 @@
+MySQL 과 server 연결하기
+server단에 mysql2 설치
